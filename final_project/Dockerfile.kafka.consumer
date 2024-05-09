@@ -1,0 +1,14 @@
+FROM python:3.11.8-bookworm
+WORKDIR /app
+# Install Java (default JDK) and update packages
+RUN apt-get update && apt-get install -y default-jdk
+# Set JAVA_HOME environment variable
+ENV JAVA_HOME=/usr/lib/jvm/default-java
+ENV PATH=$JAVA_HOME/bin:$PATH
+
+COPY . /app
+# Check if the directory postgres_db exists, if not, create it
+RUN test -d /app/postgres_db || mkdir /app/postgres_db
+RUN pip install --no-cache-dir -r requirements.txt
+# Command to run the Kafka consumer script
+CMD ["python", "kafka_consumer.py"]

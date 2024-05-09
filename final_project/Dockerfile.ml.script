@@ -1,0 +1,8 @@
+FROM python:3.11.8-bookworm
+WORKDIR /app
+COPY . /app
+# Check if the directory postgres_db exists, if not, create it
+RUN test -d /app/ml_model || mkdir /app/ml_model
+RUN pip install --no-cache-dir -r requirements.txt
+
+CMD ["python", "ml_script.py"]

@@ -1,0 +1,6 @@
+FROM python:3.11.8-bookworm
+WORKDIR /app
+COPY . /app
+RUN pip install --no-cache-dir -r requirements.txt
+
+CMD ["python", "generate_website_visualisations.py"]

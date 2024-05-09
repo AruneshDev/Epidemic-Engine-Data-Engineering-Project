@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+h1 {
+    color: #333;
+}
+.subheading {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+.section {
+    margin-bottom: 50px;
+}
+.section h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+.section p {
+    color: #666;
+    line-height: 1.5;
+}
+.section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}

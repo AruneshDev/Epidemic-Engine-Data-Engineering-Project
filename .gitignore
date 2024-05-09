@@ -1,0 +1,9 @@
+*csv
+spark-explore/.ipynb_checkpoints*
+spark-explore/data*
+final_project/postgres_db/*
+final_project/static_website/*.png
+*pkl
+!final_project/ml_model/model.pkl
+spark-explore/spark_model/*
+spark-explore/ML_Model.ipynb

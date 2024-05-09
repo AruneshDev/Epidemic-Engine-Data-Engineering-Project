@@ -1,0 +1,22 @@
+version: '2'
+services:
+  ml_predict_from_kafka:
+    build: 
+      context: .
+      dockerfile: Dockerfile.ml.predict
+    environment:
+    # Define your kafka producer ip and topic here
+      # - kafka_producer_ip=${kafka_producer_ip}
+      # - kafka_producer_topic=${kafka_producer_topic}
+      - kafka_producer_ip="44.201.154.178:9092"
+      - kafka_producer_topic="health_events"
+    volumes: 
+      - .:/app
+    networks:
+      - kafka_default
+
+networks:
+  kafka_default:
+    name: kafka_default
+    driver: bridge
+

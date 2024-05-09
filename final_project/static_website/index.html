@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualising Health Events Data</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <div class="container">
+        <h1>Visualising Health Events Data</h1>
+        <div class="subheading">
+            <p>CDS DS593 Final Project by:<br><br><b>Hrishav Varma - U57996211<br>Sri Harsha Kotamraju - U57771922<br>Arunesh Kumar Lal - U26502933</b></p><br>
+        </div>
+
+        <div class="section">
+            <h2>Visualising the Kafka Stream Data</h2>
+            <p>Here we are printing the latest 5 rows that we have received from the kafka producer by subscribing to the health_events topic.</p>
+            <img src="stream_data_latest_10_rows.png" alt="Output Image">
+        </div>
+
+        <div class="section">
+            <h2>Given Data Anomaly Trend on Location and EventType</h2>
+            <p>We are plotting the top Locations and top EventTypes by anomalies for the given data provide of 1m rows.</p>
+            <img src="given_data_visualisations.png" alt="Output Image">
+        </div>
+
+        <div class="section">
+            <h2>Machine Learning Model Predicted Anomaly Trend on Location and EventType</h2>
+            <p>We are plotting the top Locations and top EventTypes by anomalies that has been predicted by our Machine Learning Model on the kafka data stream that is trained on the given data provide of 1m rows.</p>
+            <img src="predicted_data_visualisations.png" alt="Output Image">
+            <p>As we can see, we do not have any Anomalies predicted for the kafka data stream. We conclude that this means there is no Anomaly data present in the data stream provided as of now. This could change in future if the stream of data does produce data that could have anomaly based on previous data provided.</p>
+        </div>
+
+        <div class="section">
+            <h2>Machine Learning Model Test Confusion Matrix</h2>
+            <p>We are plotting the Confusion Matrix of the Machine Learning Model we have trained on the given data provide of 1m rows with a train test split of 80/20.</p>
+            <img src="ml_test_confusion_matrix.png" alt="Output Image">
+        </div>
+
+        <div class="section">
+            <h2>Event Severity Distribution Pie Chart</h2>
+            <p>Distribution of Event Severity in a Pie Chart.</p>
+            <img src="graph_Severity_Distribution.png" alt="Output Image">
+        </div>
+
+        <div class="section">
+            <h2>Event Frequency Over Time Plot</h2>
+            <p>Description text goes here.</p>
+            <img src="graph_Event_Frequency_Over_Time.png" alt="Output Image">
+        </div>
+
+        <div class="section">
+            <h2>Distribution of Severity of Event Types by Time of Day</h2>
+            <p>Description text goes here.</p>
+            <img src="graph_Distribution_of_Severity_of_Event_Types_by_Time_of_Day.png" alt="Output Image">
+        </div>
+
+        <!-- Add more sections like this -->
+    </div>
+</body>
+</html>

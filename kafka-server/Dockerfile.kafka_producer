@@ -1,0 +1,9 @@
+# FROM python:3.11.8-alpine3.19
+# FROM python:3.11-slim
+FROM python:3.11.8-bookworm
+WORKDIR /app
+COPY . /app
+RUN pip install --no-cache-dir -r requirements.txt
+
+# CMD ["python", "kafka_filter_category_topic.py", "EventType", "hospital_admission"]
+ENTRYPOINT ["python", "kafka_filter_category_topic.py"]

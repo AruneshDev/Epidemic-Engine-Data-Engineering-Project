@@ -1,0 +1,12 @@
+python_dateutil==2.8.2
+Requests==2.31.0
+pandas
+sqlalchemy
+psycopg2
+pyspark
+confluent_kafka
+matplotlib
+scikit-learn
+joblib
+pytest
+seaborn
