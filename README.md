@@ -5,7 +5,7 @@ https://github.com/BU-CDS-DS539-2024-Spring/epidemic-engine-project-harshahrisha
 Project contribution has been equivalend among all the team members collaborating together in person. The commits do not signify the amount of work done by each person and we would like to request to be graded equally.
 # Project Overview
 <p align="center">
-  <img src="assets/epidemic_engine.png" alt="AIMO Logo" width="400"/>
+  <img src="assets/epidemic_engine.png" alt="AIMO Logo" width="800"/>
 </p>
 
 # Project Documentation
